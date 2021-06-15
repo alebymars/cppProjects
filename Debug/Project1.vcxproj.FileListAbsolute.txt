@@ -1,2 +1,4 @@
 C:\Users\aleby\Desktop\Project1\Debug\Project1.exe
 C:\Users\aleby\Desktop\Project1\Debug\Project1.pdb
+C:\Users\aleby\Desktop\лаба 6\Debug\Project1.exe
+C:\Users\aleby\Desktop\лаба 6\Debug\Project1.pdb

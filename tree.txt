@@ -1,3 +1,4 @@
-bbb 123 5 1
-aaa 545 12 1
-cda 568 154 0
+Dell 48500 6 1
+Lenovo 65000 10 1
+Toshiba 95000 15 1
+MacBook 130000 25 1

@@ -26,7 +26,7 @@ Node* temp; // кака€-то переменна€ дл€ чего-то там
 void printTree_value(Node*&, int); // прототип сортировки по стоимости 
 void printTree_char(Node*&, char); // по первой букве
 void sort(Node*& T); // прототип сортировки
-void sort_str(Node*& T); // прототип чего-то
+void sort_str(Node*& T);
 void push(Node*&, struct Data); // прототип добавлени€ элемента
 void push_str(Node*&, struct Data); // сравнение строк
 void menu(); // прототип меню
@@ -128,10 +128,10 @@ void menu() {
         case 5: {
 
             struct Data data; // 
-            cout << "¬ведите название товара: "; cin >> data.name; // берем из пол€ данных
-            cout << "¬ведите стоимость: "; cin >> data.cost; // берем из пол€ данных
-            cout << "¬ведите количество: "; cin >> data.quantity; // берем из пол€ данных
-            cout << "¬ведите наличие: "; cin >> data.availability; // берем из пол€ данных
+            cout << "¬ведите название товара: "; cin >> data.name; // вводим в поле данных
+            cout << "¬ведите стоимость: "; cin >> data.cost; // вводим в поле данных
+            cout << "¬ведите количество: "; cin >> data.quantity; // вводим в поле данных
+            cout << "¬ведите наличие: "; cin >> data.availability; // вводим в поле данных
 
             system("cls");
 
@@ -142,7 +142,7 @@ void menu() {
 
         case 6: {
 
-            deleteTree(root); // удаленеие дерева
+            deleteTree(root); // очистка дерева
 
             break;
         }
@@ -152,7 +152,7 @@ void menu() {
 
             system("cls");
 
-            printTree(root); // вывод дерева от корн€
+            printTree(root); // вывод корн€ (печать товаров)
 
             system("pause");
             system("cls");
@@ -287,10 +287,10 @@ void push_str(Node*& T, struct Data data) {
     }
 
     if (strcmp(data.name.c_str(), T->data.name.c_str()) < 0) { // сравнение строк, 
-        push_str(T->left, data); // запись в дерево слева ???
+        push_str(T->left, data); // запись в дерево слева
     }
     else {
-        push_str(T->right, data); // запись в дерево ???
+        push_str(T->right, data); // запись в дерево
     }
 
 }
