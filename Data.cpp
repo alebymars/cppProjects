@@ -12,7 +12,7 @@ int checkData(int left, int right) {
     return temp;
 };
 
-void datetime::showInfo() {
+void datetime::infoShow() {
 
     cout << "\n" << data.hour << ":" << data.minute << ":" << data.sec << " " << data.day << "/" << data.month << "/" << data.year;
 
@@ -227,7 +227,7 @@ void List::movePrev() {
 };
 
 void List::printNode() {
-    C->data->showInfo();
+    C->data->infoShow();
 }
 //Вывод списка всех дат
 void List::listPrint() {
@@ -253,13 +253,13 @@ void List::listPrintSort() {
         C = first;
         while (C != NULL) {
             if (C->next != NULL) {
-                cout << "\nДата: ";  C->data->showInfo(); 
-                cout << "\nСледующая дата: "; C->next->data->showInfo(); 
+                cout << "\nДата: ";  C->data->infoShow(); 
+                cout << "\nСледующая дата: "; C->next->data->infoShow(); 
                 cout << endl;
                 moveNext();
             }
             if (C->next == NULL) {
-                cout << "\nДата: ";  C->data->showInfo(); 
+                cout << "\nДата: ";  C->data->infoShow(); 
                 cout << "\nСледующая дата не найдена..." << endl;
                 break;
             }

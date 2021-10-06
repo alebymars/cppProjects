@@ -31,7 +31,7 @@ public:
     ~datetime() {};
 
 
-    void showInfo();
+    void infoShow();
     void addData(Data new_data);
     void showSysDate();
 };
