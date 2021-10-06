@@ -12,9 +12,9 @@ int checkData(int left, int right) {
     return temp;
 };
 
-void datetime::infoShow() {
+void datetime::showInfo() {
 
-    cout << "\n" << data.hour << ":" << data.minute << ":" << data.sec << " " << data.day << "/" << data.month << "/" << data.year;
+    cout << data.hour << ":" << data.minute << ":" << data.sec << " " << data.day << "/" << data.month << "/" << data.year;
 
 }
 
@@ -227,10 +227,12 @@ void List::movePrev() {
 };
 
 void List::printNode() {
-    C->data->infoShow();
+    C->data->showInfo();
 }
 //Вывод списка всех дат
 void List::listPrint() {
+
+    cout << "\nВывели все даты из файла : \n" << endl;
 
     if (first != NULL) {
 
@@ -253,13 +255,13 @@ void List::listPrintSort() {
         C = first;
         while (C != NULL) {
             if (C->next != NULL) {
-                cout << "\nДата: ";  C->data->infoShow(); 
-                cout << "\nСледующая дата: "; C->next->data->infoShow(); 
+                cout << "\nДата: ";  C->data->showInfo(); 
+                cout << "\nСледующая дата: "; C->next->data->showInfo(); 
                 cout << endl;
                 moveNext();
             }
             if (C->next == NULL) {
-                cout << "\nДата: ";  C->data->infoShow(); 
+                cout << "\nДата: ";  C->data->showInfo(); 
                 cout << "\nСледующая дата не найдена..." << endl;
                 break;
             }
